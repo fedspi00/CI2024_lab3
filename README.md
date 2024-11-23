@@ -24,9 +24,7 @@ The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the n
 
 ## **Performance Comparison**
 
-The table below compares the performance of A\*, BFS and DFS  for solving \(n^2-1\) puzzles of different sizes. The metrics include:
-- **Solution Length**: Number of moves to solve the puzzle.
-- **Time (seconds)**: Execution time to find the solution.
+The table below compares the performance of A\*, BFS and DFS  for solving \(n^2-1\) puzzles of different sizes.
 
 | Algorithm | Puzzle Size | Solution Length | Time (seconds) | 
 |-----------|-------------|-----------------|----------------|
