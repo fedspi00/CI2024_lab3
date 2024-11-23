@@ -4,7 +4,7 @@ The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the n
 
 ---
 
-## **3. A\*** Algorithm
+## **1. A\*** Algorithm
 
 ### Description
 - A\* combines BFS and heuristics to explore nodes with the lowest estimated cost \(f(n) = g(n) + h(n)\).
@@ -13,7 +13,7 @@ The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the n
 
 ---
 
-## **1. Breadth-First Search (BFS)**
+## **2. Breadth-First Search (BFS)**
 
 ### Description
 - BFS explores all nodes at the current depth level before moving deeper.
@@ -21,7 +21,7 @@ The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the n
 
 ---
 
-## **2. Iterative Deepening Depth-First Search (IDDFS)**
+## **3. Iterative Deepening Depth-First Search (IDDFS)**
 
 ### Description
 - IDDFS is an improved version of the DFS and explores as far down a branch as possible before backtracking until a solution is found or the maximum depth is reached.
