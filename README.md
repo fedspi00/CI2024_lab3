@@ -6,7 +6,6 @@ The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the n
 
 ## **1. A\*** Algorithm
 
-### Description
 - A\* combines BFS and heuristics to explore nodes with the lowest estimated cost \(f(n) = g(n) + h(n)\).
 - The heuristic \(h(n)\) (e.g., Manhattan distance) estimates the cost to reach the goal.
 - A\* is optimal when the heuristic is admissible (does not overestimate the true cost).
@@ -15,7 +14,6 @@ The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the n
 
 ## **2. Breadth-First Search (BFS)**
 
-### Description
 - BFS explores all nodes at the current depth level before moving deeper.
 - It guarantees finding the shortest solution if one exists.
 
@@ -23,7 +21,6 @@ The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the n
 
 ## **3. Iterative Deepening Depth-First Search (IDDFS)**
 
-### Description
 - IDDFS is an improved version of the DFS and explores as far down a branch as possible before backtracking until a solution is found or the maximum depth is reached.
 - However, it does not guarantee the shortest solution.
 
@@ -44,9 +41,6 @@ The table below compares the performance of A\*, BFS and DFS  for solving \(n^2-
 | **A\***   | 4x4         | 80              | 60             |
 | **BFS**   | 4x4         | 80              | 150            | 
 | **IDDFS**   | 4x4         | 300             | 600            | 
-| **A\***   | 5x5         | 200             | 1000           |
-| **BFS**   | 5x5         | Too large       | Too large      | 
-| **IDDFS**   | 5x5         | Too large       | Too large      | 
 
 ---
 
