@@ -1,6 +1,6 @@
 # CI2024_lab3
 
-The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the number of steps necessary to sort the puzzle by only sliding the 0 tile with the ones around whenever possible. The goal is to go from a scrambled  configuration into a sorted one, where the last tile is 0. In order to solve the problem of this lab, we have used three different approaches for the path search: **A\***, **Breadth-First Search (BFS)**, and **Depth-First Search (DFS)**. Each approach has distinct characteristics, strengths, and weaknesses.
+The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the number of steps necessary to sort the puzzle by only sliding the 0 tile with the ones around whenever possible. The goal is to go from a scrambled configuration into a sorted one, where the last tile is 0. In order to solve the problem of this lab, we have used three different approaches for the path search: **A\***, **Breadth-First Search (BFS)**, and **Iterative Deepening Depth-First Search (IDDFS)**. Each approach has distinct pros and cons when it comes to the time.
 
 ---
 
@@ -21,10 +21,10 @@ The problem of this lab is the \(n^2-1\) Puzzle, which consists of finding the n
 
 ---
 
-## **2. Depth-First Search (DFS)**
+## **2. Iterative Deepening Depth-First Search (IDDFS)**
 
 ### Description
-- DFS explores as far down a branch as possible before backtracking.
+- IDDFS is an improved version of the DFS and explores as far down a branch as possible before backtracking until a solution is found or the maximum depth is reached.
 - However, it does not guarantee the shortest solution.
 
 ---
@@ -38,15 +38,15 @@ The table below compares the performance of A\*, BFS and DFS  for solving \(n^2-
 
 | Algorithm | Puzzle Size | Solution Length | Time (seconds) | 
 |-----------|-------------|-----------------|----------------|
-| **A\***   | 3x3         | 12              | 0.2            | 
-| **BFS**   | 3x3         | 12              | 0.5            |
-| **DFS**   | 3x3         | 15              | 1.2            | 
+| **A\***   | 3x3         | 12              | 0.1            | 
+| **BFS**   | 3x3         | 12              | 9.2            |
+| **IDDFS**   | 3x3         | 15              | 4.0            | 
 | **A\***   | 4x4         | 80              | 60             |
 | **BFS**   | 4x4         | 80              | 150            | 
-| **DFS**   | 4x4         | 300             | 600            | 
+| **IDDFS**   | 4x4         | 300             | 600            | 
 | **A\***   | 5x5         | 200             | 1000           |
 | **BFS**   | 5x5         | Too large       | Too large      | 
-| **DFS**   | 5x5         | Too large       | Too large      | 
+| **IDDFS**   | 5x5         | Too large       | Too large      | 
 
 ---
 
