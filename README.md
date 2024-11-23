@@ -52,10 +52,11 @@ The table below compares the performance of A\*, BFS and DFS  for solving \(n^2-
 
 ## **Conclusion**
 
+- **A\*** strikes a balance between optimality and efficiency. It is the best choice for larger puzzles if a good heuristic like Manhattan distance is used.
 - **BFS** is suitable for small puzzles (e.g., 3x3) where finding the shortest solution is critical. However, its memory requirements make it impractical for larger puzzles.
 - **DFS** is memory-efficient but may not find the shortest solution and can perform poorly for larger puzzles.
-- **A\*** strikes a balance between optimality and efficiency. It is the best choice for larger puzzles if a good heuristic like Manhattan distance is used.
 
 ---
 
-
+## Contributors
+Some techniques implemented were developed jointly with [Gabry0581](https://github.com/Gabry323387/).
